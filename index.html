@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Background with Preloader | VanillaJS</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Template | VanillaJS</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <div class="preloader" id="preloader">
+      <img
+        src="./assets/images/preloader.gif"
+        alt="preloader"
+        class="preloader__item"
+      />
+    </div>
+    <header>
+      <video muted autoplay loop class="video-container" id="video-container">
+        <source
+          src="https://player.vimeo.com/external/360248610.hd.mp4?s=bb8204ac747bfa76c405bc87588b81c99ef7ca19&profile_id=170"
+          type="video/mp4"
+        />
+      </video>
+      <h1>Video Background</h1>
+      <button class="switch-button" id="switch-button">
+        <span> play </span>
+        <span> pause </span>
+        <span class="switch"></span>
+      </button>
+    </header>
 
-<body>
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
